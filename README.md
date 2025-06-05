@@ -53,31 +53,6 @@ rag-demo/
 
 ## 🧠 How It Works (Architecture)
 
-```
-    [ Student Question ]
-              │
-              ▼
-[ Embed Question via SentenceTransformer ]
-              │
-              ▼
-[ Search Top Chunks from FAISS Index ]
-              │
-              ▼
-[ Construct Prompt: Context + Question ]
-              │
-              ▼
-[ Generate Answer via HuggingFace LLM ]
-              │
-              ▼
-    [ Display Answer + Sources ]
-
-
-## 🧠 How It Works (Architecture)
-
-```
-
-You can also represent this with a **Mermaid diagram**:
-
 ```mermaid
 graph TD
   A[Student Question] --> B[Embed with SentenceTransformer]
@@ -85,6 +60,7 @@ graph TD
   C --> D[Build Prompt with Retrieved Chunks]
   D --> E[Generate Answer with LLM]
   E --> F[Display Answer + Context]
+
 ```
 
 ## 🎓 Student Challenges
