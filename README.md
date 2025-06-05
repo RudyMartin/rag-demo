@@ -87,7 +87,7 @@ You may also add this badge to your GitHub project:
 ---
 
 **Built with ❤️ by CodeBreakers / Next Shift Consulting**
-Join the movement → [CodeBreakers Manifesto](terms/codebreakers_manifesto.md)
+Join the movement → [CodeBreakers Manifesto](terms/CodeBreakers_Manifesto.md)
 
 
 
