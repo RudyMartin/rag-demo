@@ -22,6 +22,7 @@ rag-demo/
 ├── faiss.index           # Auto-generated FAISS index file
 ├── embeddings.json       # Embedding metadata for each chunk
 ├── requirements.txt      # Python dependencies
+├── terms/                # Alignment with Codebreakers Manifesto
 └── README.md             # You're reading it!
 ```
 
