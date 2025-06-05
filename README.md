@@ -1,8 +1,6 @@
-# rag-demo
-Data Science Camp Navigator
-# 🔍 Ask the Camp: RAG Demo (Streamlit + FAISS + Open LLM)
+# 🧭 Camp Navigator: RAG Demo (Streamlit + FAISS + Open LLM)
 
-Welcome to the **CodeBreakers RAG Demo**, a student-friendly starter project that teaches how to build an AI assistant using Retrieval-Augmented Generation (RAG).
+Welcome to the **Camp Navigator Demo**, a student-friendly starter project that teaches how to build an AI assistant using Retrieval-Augmented Generation (RAG).
 This project reflects the values in the [CodeBreakers Manifesto](../codebreakers_manifesto)—open, ethical, user-first technology.
 
 ![License: CC BY 4.0](https://img.shields.io/badge/License-CC%20BY%204.0-lightgrey.svg)
@@ -56,37 +54,37 @@ rag-demo/
 ## 🧠 How It Works (Architecture)
 
 ```
-           ┌──────────────────────────┐
-           │   Student Question  │
-           └───────────────────────┘
-                    │
-                    ▼
-        ┌────────────────────────────┐
-        │ Embed question using model │◄──────────────────────┐
-        └─────────────────────────┘             │
-                 │                                 │
-                 ▼                                 │
-        ┌───────────────────────────┐             │
-        │   Search similar chunks    │             │
-        │      using FAISS index     │             │
-        └─────────────────────────┘             │
-                 │                                 │
-                 ▼                                 │
-        ┌───────────────────────────┐             │
-        │   Construct prompt:        │             │
-        │   [Context + Question]     │             │
-        └─────────────────────────┘             │
-                 │                                 │
-                 ▼                                 │
-        ┌───────────────────────┐             │
-        │     Generate answer         │◄──────────────────┐
-        │     with open-source LLM    │
-        └───────────────────────┘
-                 │
-                 ▼
-        ┌───────────────────────┐
-        │   Display answer + context │
-        └───────────────────────┘
+    [ Student Question ]
+              │
+              ▼
+[ Embed Question via SentenceTransformer ]
+              │
+              ▼
+[ Search Top Chunks from FAISS Index ]
+              │
+              ▼
+[ Construct Prompt: Context + Question ]
+              │
+              ▼
+[ Generate Answer via HuggingFace LLM ]
+              │
+              ▼
+    [ Display Answer + Sources ]
+
+
+## 🧠 How It Works (Architecture)
+
+```
+
+You can also represent this with a **Mermaid diagram**:
+
+```mermaid
+graph TD
+  A[Student Question] --> B[Embed with SentenceTransformer]
+  B --> C[Search in FAISS Index]
+  C --> D[Build Prompt with Retrieved Chunks]
+  D --> E[Generate Answer with LLM]
+  E --> F[Display Answer + Context]
 ```
 
 ## 🎓 Student Challenges
@@ -113,3 +111,8 @@ You may also add this badge to your GitHub project:
 
 **Built with ❤️ by CodeBreakers / Next Shift Consulting**
 Join the movement → [CodeBreakers Manifesto](../codebreakers_manifesto)
+
+
+
+---
+
