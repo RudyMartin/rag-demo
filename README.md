@@ -154,7 +154,7 @@ Students can:
 >
 > * Decentralized AI pipelines
 > * Blockchain-secured infrastructure
-> * Education through responsible deployment models (CodeBreakers-aligned)
+> * Education through responsible deployment models 
 
 ---
 
@@ -199,7 +199,7 @@ This project is licensed under the **Creative Commons Attribution 4.0 Internatio
 
 ---
 
-**Built with ❤️ by CodeBreakers / Next Shift Consulting**
-Join the mission → [CodeBreakers Manifesto](terms/CodeBreakers_Manifesto.md)
+**Built with ❤️ by [CodeBreakers](terms/CodeBreakers_Manifesto.md) / Next Shift Consulting**
+
 
 
