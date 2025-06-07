@@ -199,7 +199,7 @@ This project is licensed under the **Creative Commons Attribution 4.0 Internatio
 
 ---
 
-**Built with ❤️ by [CodeBreakers](terms/CodeBreakers_Manifesto.md) / Next Shift Consulting**
+**Built with ❤️ using [CodeBreakers](terms/CodeBreakers_Manifesto.md) / Next Shift Consulting**
 
 
 
