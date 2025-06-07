@@ -188,7 +188,7 @@ The Akash Cloud is ideal for AI projects like yours because:
 
 * 🌐 [Akash Network Homepage](https://akash.network)
 * 📘 [Akash Docs – Get Started](https://docs.akash.network/)
-* 💰 [FUNDING\_AKASH\_WALLET.md](FUNDING_AKASH_WALLET.md) – How to fund your deployment
+* 💰 [Tips, Tricks, and Traps for ESP32 AI Agent Systems](https://github.com/RudyMartin/esp32-ai-agents) – Build Smarter Devices with the MCP/FSM Method
 * 🧠 [CodeBreakers Manifesto](terms/CodeBreakers_Manifesto.md) – Responsible tech principles
 
 ---
