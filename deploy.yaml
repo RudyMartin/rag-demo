@@ -1,0 +1,45 @@
+version: "2.0"
+
+services:
+  flask-rag-service:
+    image: your-dockerhub-username/my-flask-rag-app:latest
+    expose:
+      - port: 5000
+        as: 80
+        to:
+          - global: true
+    resources:
+      cpu:
+        units: 0.05
+      memory:
+        size: 256Mi
+      storage:
+        size: 1Gi
+
+profiles:
+  compute:
+    flask-profile:
+      resources:
+        cpu:
+          units: 0.05
+        memory:
+          size: 256Mi
+        storage:
+          size: 1Gi
+  placement:
+    akash:
+      attributes:
+        host: akash
+      signedBy:
+        anyOf:
+          - "akash1xxxxxxxxxxxxxxxxxxxxxxxxxxxxxx"
+      pricing:
+        flask-profile:
+          denom: uakt
+          amount: 100
+
+deployment:
+  flask-deployment:
+    flask-rag-service:
+      profile: flask-profile
+      count: 1
