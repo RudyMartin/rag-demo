@@ -109,20 +109,6 @@ my-flask-rag-app/
 
 ---
 
-## ⛓️ Blockchain + Funding Requirements
-
-> ⚠️ Deployment requires **AKT tokens** and a valid Akash wallet.
-
-You can fund your wallet using:
-
-* 🧬 [Keplr Wallet + Osmosis DEX](https://app.osmosis.zone/)
-* 💵 [Coinbase → Cosmos → Osmosis → Akash](https://akash.network/blog)
-
-See the detailed guide here:
-📘 [`FUNDING_AKASH_WALLET.md`](FUNDING_AKASH_WALLET.md)
-
----
-
 ## 🛠️ Developer Tips (Offline Testing)
 
 To rebuild the vector index locally:
@@ -136,6 +122,22 @@ To test locally (not on Akash):
 ```bash
 gunicorn -w 4 -b 0.0.0.0:5000 wsgi:app
 ```
+
+[Other Useful Deployment Notes](README_DEPLOY>MD)
+
+---
+
+## ⛓️ Blockchain + Funding Requirements
+
+> ⚠️ Deployment requires **AKT tokens** and a valid Akash wallet.
+
+You can fund your wallet using:
+
+* 🧬 [Keplr Wallet + Osmosis DEX](https://app.osmosis.zone/)
+* 💵 [Coinbase → Cosmos → Osmosis → Akash](https://akash.network/blog)
+
+See the detailed guide here:
+📘 [`FUNDING_AKASH_WALLET.md`](FUNDING_AKASH_WALLET.md)
 
 ---
 
