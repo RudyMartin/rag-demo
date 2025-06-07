@@ -137,9 +137,8 @@ To test locally (not on Akash):
 gunicorn -w 4 -b 0.0.0.0:5000 wsgi:app
 ```
 
----
 ```mermaid
-flowchart TD
+graph TD
   subgraph User
     A[🧑‍🎓 Student] --> B[🔗 HTTP Request]
     B --> C[/api/daily_directive or /api/ask]
@@ -169,7 +168,7 @@ flowchart TD
     I4 --> F2
     I5 --> C
   end
-```
+````
 
 
 ---
