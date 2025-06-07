@@ -1,5 +1,5 @@
 
-# 🚀 Akash Deployment Guide – Artemis Camp RAG App
+# 🚀 Akash Deployment Guide – Artemis Camp Navigator RAG App
 
 This repository contains a fully hardened, hands-off AI assistant for students to retrieve directives and ask questions from a pre-indexed knowledge base using FAISS + Hugging Face models.
 
