@@ -137,8 +137,6 @@ To test locally (not on Akash):
 gunicorn -w 4 -b 0.0.0.0:5000 wsgi:app
 ```
 
-
-
 ---
 
 ## 🎓 Educational Extensions
@@ -148,6 +146,50 @@ Students can:
 * Create new documents (`docs/*.md`) to teach the model new things
 * Use `/api/ask` to query historical camp material
 * Study FSM and prompt design patterns in `rag_utils.py`
+
+## 🤝 Funded in Part by:
+
+> **Albany State University Center for Blockchain Innovation and Emerging Technology**
+> Supported this work to advance open-source, student-facing applications that explore:
+>
+> * Decentralized AI pipelines
+> * Blockchain-secured infrastructure
+> * Education through responsible deployment models (CodeBreakers-aligned)
+
+---
+
+## 🌐 What Is the Akash Cloud?
+
+The **Akash Cloud** is a decentralized, open-source cloud computing marketplace built on the **Cosmos blockchain ecosystem**. It allows users to deploy applications (like websites, AI models, or full containers) on underutilized compute infrastructure contributed by a global network of providers.
+
+
+| Feature                | Description                                                                |
+| ---------------------- | -------------------------------------------------------------------------- |
+| **Decentralized**      | No central cloud authority (unlike AWS, GCP, Azure)                        |
+| **Blockchain-secured** | Uses the **Akash blockchain** to manage leases, payments, and resources    |
+| **Token-Powered**      | Payment is made in **AKT tokens**, Akash’s native utility token            |
+| **Open-Access**        | Anyone can offer compute or deploy workloads using Docker-based containers |
+| **Part of Cosmos**     | Built with the Cosmos SDK, interoperable with other IBC-enabled chains     |
+
+---
+
+## 🧠 Why Use Akash for AI + RAG?
+
+The Akash Cloud is ideal for AI projects like yours because:
+
+* ✅ It supports **GPU and CPU workloads**
+* ✅ You **retain full control** of your container (no vendor lock-in)
+* ✅ You can **automate deployment** with YAML + CLI (`deploy.yaml`, `deploy.sh`)
+* ✅ It's significantly more **cost-efficient** for persistent, low-maintenance apps
+
+---
+
+## 📎 Useful References
+
+* 🌐 [Akash Network Homepage](https://akash.network)
+* 📘 [Akash Docs – Get Started](https://docs.akash.network/)
+* 💰 [FUNDING\_AKASH\_WALLET.md](FUNDING_AKASH_WALLET.md) – How to fund your deployment
+* 🧠 [CodeBreakers Manifesto](terms/CodeBreakers_Manifesto.md) – Responsible tech principles
 
 ---
 
