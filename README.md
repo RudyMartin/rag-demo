@@ -67,7 +67,7 @@ Example:
 
 ## 🧠 MCP/FSM Process Overview
 
-This assistant is structured using the **MCP (See → Think → Do → Speak)** + FSM pattern:
+This assistant is structured using the **MCP Loop (Sense → Plan → Act → Log → Repeat)** + FSM pattern:
 
 ```mermaid
 graph TD
@@ -78,10 +78,10 @@ graph TD
     E --> F[📤 Return JSON to Student]
 ````
 
-* **See:** Embed the question with MiniLM
-* **Think:** Compare to pre-indexed camp materials
-* **Do:** Pass top matches as prompt to the model
-* **Speak:** Return answer and context snippet
+* **Sense:** Embed the question with MiniLM
+* **Plan:** Compare to pre-indexed camp materials
+* **Act:** Pass top matches as prompt to the model
+* **Log:** Return answer and context snippet
 
 ---
 
