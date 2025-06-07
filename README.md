@@ -7,7 +7,7 @@ This project teaches how to combine:
 - 🧠 vector search (FAISS)
 - 🤖 open-source LLMs (Mistral 7B)
 - 🔐 student-aware endpoint security
-- 📦 decentralized deployment (Akash)
+- 📦 decentralized blockchain-enabled deployment (Akash)
 
 [![License: CC BY 4.0](https://img.shields.io/badge/License-CC%20BY%204.0-lightgrey.svg)](https://creativecommons.org/licenses/by/4.0/)
 
