@@ -137,31 +137,29 @@ To test locally (not on Akash):
 gunicorn -w 4 -b 0.0.0.0:5000 wsgi:app
 ```
 
-```mermaid
+``mermaid
 graph TD
   subgraph User
-    A[🧑‍🎓 Student] --> B[🔗 HTTP Request]
+    A[Student] --> B[HTTP Request]
     B --> C[/api/daily_directive or /api/ask]
   end
 
-  subgraph Akash Deployment ["🌐 Deployed on Akash (Docker Container)"]
-    C --> D[🔐 Auth Check<br>student_id + token]
-    D --> E[🧠 RAG Engine (rag_utils.py)]
-
-    E --> F1[📄 Retrieve Embeddings<br>(FAISS + embeddings.json)]
-    E --> F2[💬 Generate Answer<br>(Mistral-7B-Instruct)]
-
-    F1 --> G[🧾 Response Built]
+  subgraph Akash Deployment ["Deployed on Akash (Docker Container)"]
+    C --> D[Auth Check<br>student_id + token]
+    D --> E[RAG Engine (rag_utils.py)]
+    E --> F1[Retrieve Embeddings<br>(FAISS + embeddings.json)]
+    E --> F2[Generate Answer<br>(Mistral-7B-Instruct)]
+    F1 --> G[Response Built]
     F2 --> G
-    G --> H[📤 Return JSON Result]
+    G --> H[Return JSON Result]
   end
 
   subgraph Assets Inside Container
-    I1[📚 /docs folder<br>(Markdown + Text)]
-    I2[🧠 faiss.index + embeddings.json]
-    I3[🔢 SentenceTransformer Embedder]
-    I4[🤖 Mistral-7B Model (text-gen pipeline)]
-    I5[🧾 Flask API + Gunicorn]
+    I1[/docs folder<br>(Markdown + Text)]
+    I2[faiss.index + embeddings.json]
+    I3[SentenceTransformer Embedder]
+    I4[Mistral-7B Model (text-gen pipeline)]
+    I5[Flask API + Gunicorn]
     I1 --> E
     I2 --> F1
     I3 --> F1
