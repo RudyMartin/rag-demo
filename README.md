@@ -137,7 +137,7 @@ To test locally (not on Akash):
 gunicorn -w 4 -b 0.0.0.0:5000 wsgi:app
 ```
 
-``mermaid
+```mermaid
 graph TD
   subgraph User
     A[Student] --> B[HTTP Request]
